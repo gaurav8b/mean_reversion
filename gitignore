@@ -1,0 +1,193 @@
+# ============================================================
+# Algo-Trading repository: source-code-only tracking
+# Track source code files; ignore data, generated outputs,
+# documentation, dependencies, local settings, and other files.
+# ============================================================
+
+# Default: ignore everything.
+*
+
+# Allow Git to enter directories so source files can be included.
+!*/
+
+# Keep this Git configuration file itself.
+!.gitignore
+
+# ------------------------------------------------------------
+# Allow source-code extensions used by this repository
+# and common related source-code extensions.
+# ------------------------------------------------------------
+!*.py
+!*.pyi
+!*.R
+!*.r
+!*.cpp
+!*.cc
+!*.cxx
+!*.c
+!*.h
+!*.hh
+!*.hpp
+!*.hxx
+!*.rs
+!*.go
+!*.js
+!*.jsx
+!*.ts
+!*.tsx
+!*.java
+!*.kt
+!*.kts
+!*.scala
+!*.swift
+!*.m
+!*.mm
+!*.sh
+!*.bash
+!*.ps1
+!*.sql
+
+# This existing Python source file has no file extension.
+!TA - Sentiment Analysis + SMA - Trading Strategy
+
+# ------------------------------------------------------------
+# Explicitly exclude data archives and common data files.
+# These rules take precedence over the source-code allowlist.
+# ------------------------------------------------------------
+BTCUSD-*.zip
+ETHUSD-*.zip
+*.zip
+*.7z
+*.rar
+*.tar
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+*.bin
+*.dat
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.jsonl
+*.ndjson
+
+# ------------------------------------------------------------
+# Generated results, reports, plots, backtests, and run outputs.
+# ------------------------------------------------------------
+runs/
+run/
+outputs/
+output/
+results/
+result/
+reports/
+report/
+artifacts/
+artifact/
+plots/
+plot/
+figures/
+figure/
+backtest_results/
+backtest-results/
+backtests/output/
+distribution/
+dist/
+build/
+coverage/
+htmlcov/
+site-packages/
+
+# Common generated result files, regardless of directory.
+auctionbot_*.csv
+plot_*.png
+*.log
+*.out
+*.err
+*.prof
+*.coverage
+coverage.xml
+junit.xml
+
+# ------------------------------------------------------------
+# Secrets, credentials, and local-only configuration.
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+credentials
+credentials.*
+secrets.*
+*secret*
+*credential*
+*token*
+*apikey*
+*api_key*
+
+# ------------------------------------------------------------
+# Dependencies, environments, caches, and tool-generated files.
+# ------------------------------------------------------------
+node_modules/
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.ipynb_checkpoints/
+.cache/
+.tmp/
+tmp/
+temp/
+
+# IDE/editor/OS files.
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------
+# Non-source repository material is intentionally not allowlisted:
+# README/docs, LICENSE, markdown/text files, PDFs, images, and
+# other supplementary files remain ignored by the default rule.
+# ------------------------------------------------------------
